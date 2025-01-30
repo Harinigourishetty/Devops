@@ -1,0 +1,70 @@
+                             *Apache tomcat*
+
+How to install Apache tom cat in windows?
+
+    Apache Tomcat is an open-source web server and servlet container for Java code.
+
+
+Prerequisites:
+
+     -> Java JRE installed and configured
+     -> Administrator privileges
+
+
+
+INSTALLATION:-
+
+Step-1 :- Download tomcat for windows
+        -> Browse to the official Apache Tomcat website.
+        -> Locate the Download section and click the latest Tomcat version available At the time of writing this article, the latest Tomcat version was version 10.
+
+Step-2 :- install tomcat
+             Install Tomcat via the Windows Service Installer for an automated and wizard-guided experience.
+
+Step-3 :- After downloading the zip file
+           1. After downloading the 32bit/64bit Windows zip file, depending on your Windows version, unzip the downloaded file. 
+              Right-click the file and select Extract all...
+           2. Navigate to the unzip file of the apache tomcat
+    
+  
+
+
+** Default port no:- 8080
+
+      if at all we wanted to change the port number we have to go to apache tomcat.
+          Apache tomcat--> conf --> server.xml
+
+**** Server.xml file
+           <Connector port="8080" protocol = "HTTP/1.1"
+             Connection timeout ="20000"
+              redirect port ="8443"/>
+
+HOW TO START AND STOP THE APACHE MAVEN TOMCAT:-
+
+  TO START:-
+    Apache tomcat --> bin --> startup (windows batch file)
+    
+  TO STOP:- 
+     Apache tomcat --> bin --> shut down (windows batch file)
+
+  For configurational changes:-
+      Apache tomcat --> conf
+
+  Foe hosting of the application (Artifacts/deployable package)   
+      Apache tomcat --> webapps
+   
+  FOR LOGS
+    Apache tomcat --> logs(Apache tomcat and also applicable which is running inside tomcat)
+
+  WE CAN ACCESS TOMCAT USING LOCAL HOST 8080 or else 127.0.0.0.8080
+ 
+
+
+
+
+
+
+
+
+
+
