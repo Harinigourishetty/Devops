@@ -1,0 +1,217 @@
+Software Development Life Cycle (SDLC)
+
+
+It is a systematic process used by software development teams to design, develop, test, and maintain software applications. It consists of a series of stages that guide the project from the initial concept to the final release.
+
+            The main stages of SDLC:
+
+             * Planning
+
+             * Defining
+
+             * Designing
+
+             * Building
+
+             * Testing
+
+             * Deployment
+
+
+SDLC Models:
+
+1. Waterfall Methodology
+
+
+2. Agile Methodology
+
+
+3. DevOps Methodology
+
+
+
+Waterfall:
+
+Requirements and gathering analysis
+↳ Design (tools, mockups)
+↳ Code Implementation
+↳ Testing
+↳ Deployment (release)
+↳ Monitoring (maintenance)
+
+Drawbacks:
+
+1. Flexibility: Difficult to make changes once a phase is completed.
+
+
+2. Long Delivery Time.
+
+
+3. No Early Feedback.
+
+
+4. Miscommunication with the different teams.
+
+
+
+Agile :
+
+In the Agile methodology, each project is broken up into several iterations.
+
+An iteration should be of the same duration (2 to 9 weeks).
+
+At the end of each iteration, a working product should be delivered.
+
+
+(Diagram):
+1st interation : Plan,design,develop
+2nd Iteration : plan,design,develop
+3rd Iteration : plan,design,develop
+
+Drawbacks:
+
+1. Time-taking (up to 2 weeks) if any changes.
+
+
+2. It can focus only on software development.
+
+
+3. There is no collaboration between teams.
+
+
+
+
+* Limitations of Agile :
+
+Developer’s Team: “Code is working on my server!” (Wants changes)
+
+Operation’s Team: “There is a problem in code!” (Wants stability)
+
+
+Solution: DevOps
+
+
+* Development with DevOps Culture:
+
+  1. Streamlined Deliveries.
+
+  2. Teamwork collaboration.
+
+  3. Continuous monitoring and feedback.
+
+
+* What Exactly DevOps? :
+
+(Diagram)
+Code → Plan → Build → Release → Deploy → Operate → Monitor  
+
+
+* What is DevOps?
+DevOps is a practice that allows a single team to manage the entire application development lifecycle that is development, testing, deployment, and monitoring.
+
+                  (Code → Production)
+
+
+
+* What does DevOps do?
+
+  1. Integrates developers and operations teams.
+
+  2. Improves collaboration and productivity by:
+
+  3. Automating infrastructure.
+
+  4. Automating workflows.
+
+  5. Continuously measuring application performance.
+
+
+
+* Skills of a DevOps Engineer..!
+
+Tools: Git(vcs), Jenkins(CI_CD), Docker(contenerisation), Kubernetes(container orchestration), Ansible(configuration management), Puppet(configuration), Grafana(monitoring), Prometheus(monitoring)..etc
+
+Network Skills(Establishing connection between container or port forwarding,container orchestration) ,Peopleskills(communication) ,Customer skill ,Cloud awareness(Aws,Gcp,Azure)
+
+
+
+* DevOps Lifecycle *(Day-1) 22/01/25
+
+Plan - (1)
+
+First stage of the DevOps cycle, where you plan, track, visualize your project before working/starting it.
+
+Tools:
+
+1. Jira 2. Trello
+
+
+
+Code - (2)
+
+Second stage of the DevOps cycle, where the developers write their code.
+
+Tools:
+
+1. Git 2. Subversion 3. Eclipse
+
+
+
+Build - (3)
+
+Build is a pre-release version, identified by a build number rather than by a release number.
+
+Tools:
+
+1. Maven 2. Gradle 3. Apache Ant 4. Jenkins
+
+
+
+Test - (4)
+
+Process of executing automated tests as part of the software delivery pipeline in order to obtain feedback on the business risks associated with a software release as rapidly as possible.
+
+Tools : 1.Junit 2.Jmeter 3.se(selinium)
+
+
+
+Release - (5)
+
+This phase helps to integrate code into a shared repository, using which you can detect and locate errors quickly and easily.
+
+Tools:
+
+1. Bamboo 2. GitLab 3. Travis CI
+
+
+
+Deploy - (6)
+
+Manage and maintain development and deployment of software systems and servers in any computational environment.
+
+Tools:
+
+1. AWS 2. Ansible 3. Chef
+
+
+
+Operate - (7)
+
+This phase is to keep the system upgrade with the latest updates.
+
+Tools:
+
+1. AWS 2. Ansible 3. Chef
+
+
+
+Monitor - (8)
+
+It ensures the application is performing as desired and the environment is stable. It quickly determines when a service is unavailable and understanding the underlying cause.
+
+Tools:
+
+1. Nagios 2. Sensu 3. Splunk
+
+
+

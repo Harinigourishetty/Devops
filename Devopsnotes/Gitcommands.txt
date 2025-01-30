@@ -1,0 +1,182 @@
+                  * Git commands *
+
+
+1. git init :  command used to create a new Git repository. 
+             - It initializes a new empty repository in the current directory by creating a hidden ".git folder".
+             - which Git uses to track changes and store the repository’s history.
+
+
+
+2. git clone:  The git clone command creates a copy of an existing Git repository. 
+             - It downloads the repository from a remote server (like GitHub) to your local machine including all files, history, and branches.
+
+
+
+3. git config --global user.name "username" : command sets your name for all commits across all Git repositories on your machine(To know who did what)
+
+
+
+4. git config --global user.email "emailid" : command sets your email address for all commits across all repositories on your machine
+
+
+
+5. git config --global user.name : To check the users
+
+
+6. git config --global user.mail : To check the users email id's
+
+
+7. git config --global --list : To check all the users and mails
+
+
+8. git add <file name> : It is used to stage a file it tells to git to start tracking changes to that file,so those changes are saved to version history
+
+
+9. git commit -m "message" : command used to commit all the files which are present in the staging area.
+
+
+10. git commit -m "message" <filename> : command used to commit changes for specific file
+
+
+11. git status : to list the files witch files are tracked,untracked or staged,unstaged
+
+
+13. git log : comand displays the commit history including with commit id,user details,time stmap,file name
+
+
+14. git log --oneline : Command displays the commit id in the short(7 digits)
+ 
+                        - commit id consist of 40 characters in the aplhanumeric
+
+
+15. git diff "commit ID": command shows the differences between changes in your working directory and the last commit,such as insertion,deletion..
+
+
+16. git branch : command list all the branches and mainly it shows which branch you are in
+
+
+17. git branch "branch-name" : command used to create a new branch
+
+
+18. git checkout -b "branch-name" : Command used to create a branch and switch to new branch
+
+
+19. git checkout "branch-name" : command used to switch one branch to another.
+
+
+20. git branch -m(move) oldbranch newbranch : command used to rename branch existing name
+
+
+21. git branch -d branch-name : command used to delete a branch
+
+
+22. git branch -D branch-name : command used to delete a branch forcefully (if 
+we want to deleting a branch we can come out from on branch)
+
+
+23. git revert "commit-ID" : git revert used to undo the file and commit history 
+                              - Revert command can create the new commit id
+                              - Revert command can deletes the file working and local repository
+
+
+24. git restore "File-name" : git restore command used to unstage the files from staging area
+                               - restore command cannot undo the commit id's and files 
+
+                               eg: If we want to add content in existing file so we can use restore with the same commit id
+
+
+25. git log --1 : Command used to check the recent commit id
+
+
+26. which git : command shows the where git is stored
+
+
+27. git commit -am "message" : command used for skip the git add command (command only for existing files)
+                               - if we want to edit or add content in existing file then we can use. 
+
+
+28. git diff : command Used to compare the files and commits id's
+                    - git diff "commit-id".."commit-id" 
+                    - git diff "commit-id" "commit-id"
+
+
+29. git switch "branch-name" : command used to switch to new branch
+
+
+30. git reflog : command used to check the history of all branches
+
+
+31. git stash : command used to save the files temparorly
+                 - command used after the commiting or adding
+
+
+32. git stash list : command used to check which files are in stash
+
+
+33. git stash pop: command is used for remove from stash (for most recent stash)
+
+
+34. git stash drop : command used to remove the latest stash
+
+
+35. git stash clear: command used to clear the all stashes
+
+36. git stash apply stash{0} : command used to apply specific stash
+
+
+37. git stash drop stash{1} : COMMAND used to remove specific stash 
+
+
+38. git merge "branch-name" : command used to merge the files on branch to another branch
+
+
+39. git merge --abort : command used to cancel the merge when conflicts arise
+
+
+40. git cherry-pick "commit-id" : command that applies the changes from a specific commit from one branch to your current branch, 
+                                  without   merging the entire branch.
+
+
+41. git remote add origin <repo url> : Command used to link local repo to central repo
+
+
+42. git push <remote> <branch> : command is used to upload local repository changes to a remote repository
+                                     eg : git push origin main
+
+
+43. git push -u origin <branch name> : command used as if you’re pushing a new branch to the remote for the first time.
+
+
+44. git push -u origin baranch1 branch2 : command used to push data into multiple branches at a time
+
+
+45. git push -u origin --all : command used to push files into all branches at a time
+
+
+46. git push -u origin --delete branch-name : command used to delete GitHub branch from local
+
+
+47. git remote rm origin : command used to unlink the GitHub repository
+
+
+47. git fetch branch-name : command used to fetch the data from central to local
+
+
+48. git fetch --all : command used to fetch the data from all branches which is in your remote 
+
+
+49. git pull branch-name : command is used to fetch changes from a remote repository and automatically merge them into your current local
+                           branch 
+                            - it is a combination of two commands git fetch and git merge
+
+
+50. git commit --amend -m "message" : command allows you to modify the most recent commit, changing its commit message.
+
+
+51. git commit --amend --author "username <email>" : command used to change the author of latest commit
+<<<<<<< HEAD
+
+
+52. git branch new-email  : "the command to create a new branch named "new-email""
+=======
+>>>>>>> 2d89d78eb85b4fdf2a043329d5beb2f66a272f7a
