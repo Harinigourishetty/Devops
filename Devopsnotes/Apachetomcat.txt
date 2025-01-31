@@ -56,7 +56,7 @@ HOW TO START AND STOP THE APACHE MAVEN TOMCAT:-
   FOR LOGS
     Apache tomcat --> logs(Apache tomcat and also applicable which is running inside tomcat)
 
-  WE CAN ACCESS TOMCAT USING LOCAL HOST 8080 or else 127.0.0.0.8080
+  WE CAN ACCESS TOMCAT USING LOCAL HOST 8080 or else 127.0.0.1.8080
  
 
 
