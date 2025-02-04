@@ -1,8 +1,8 @@
                                            *APACHE MAVEN*
 
 What is Maven?
-
-"Maven is a tool that is used to compile, validate codes, and analyse the test-cases in the code".
+u
+"Maven is a build tool that is used to compile, validate codes, and analyse the test-cases in the code".
 
 -> Manages the building, reporting and documentation from source control management(SCM)
 
