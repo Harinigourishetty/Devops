@@ -117,13 +117,10 @@ HOW TO START AND STOP THE APACHE MAVEN TOMCAT:-
 8)to view the last n number of lines where n is a number: tail -15 filename
  
 9)to view the first n number of lines where n is a number: head -2 filename
- 
 
 
 
-
-
-
+                            
 
 
 
