@@ -59,6 +59,13 @@ HOW TO START AND STOP THE APACHE MAVEN TOMCAT:-
   WE CAN ACCESS TOMCAT USING LOCAL HOST 8080 or else 127.0.0.1.8080
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> bbb7cabe8b77e81a51e7f7e6fc1aab597a871393
 1) Apache TomCat Folder Structure
  
    conf-configuration
