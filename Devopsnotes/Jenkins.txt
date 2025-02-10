@@ -630,9 +630,6 @@ pipeline {
            by default pipeline execution will work on serial mode (one by one). if the previous stage is passed then only it will go for next or further stages.
 
 
-
-
-
                    Configure Jenkins to poll changes in SCM.
             
              -> Apart from the above 5 ways we can also trigger jobs manually from the Jenkins console, or using a script.
