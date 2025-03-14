@@ -76,7 +76,7 @@ JENKINS ARCHITECTURE: SOURCE CONTROL MANAGEMENT
                             |                           ________________  
 ___________________________________________________     |               |  | → Test Environment
 |  ________________    _______________   ________  |    |Is branch test,|  |
-| | Build+unitTest | → |Function Test| → |Deploy|  |    |release        |  | → Release Evironment
+| | Build+unitTest | → |Function Test| → |Deploy|  |    |   release     |  | → Release Evironment
 | ------------------   ---------------   --------  |    |     (or)      |  |
 ____________________________________________________    | production    |  | → Production Environment
                                                         ------------------ |
@@ -666,7 +666,6 @@ EXAMPLE:~ create a job 10 .(take the reference of job8 configuration)
  * then we have to save it;    manage jenkins -->user -->adminuser
 
 
-
  -> change the password then we have to save it.
  
  -> Now we need to restart the Jenkin Server.
@@ -681,6 +680,9 @@ EXAMPLE:~ create a job 10 .(take the reference of job8 configuration)
  
  Jenkins.io/doc/book/pipeline/jenkinsfile/#using-environment-variables
 
+
+
+
  Using Jenkins Environment Variables
  
  Jenkins pipeline Exposes Environment variables via the global variable Env, which is available from anywhere within a Jenkins file.
@@ -690,9 +692,10 @@ EXAMPLE:~ create a job 10 .(take the reference of job8 configuration)
  BUILD_ID - The current build ID, identical to BUILD_NUMBER for builds created.
  
  Likewise we have "BUILD_NUMBER", "BUILD_TAG", "BUILD_URL", "JENKINS_URL", "JOB_NAME", "NODE_NAME", "WORKSPACE"
+
+
  
  Here's how you can create your Word document:
-
 
  
  Jenkins pipeline Exposes Environment variables via the global variable Env, which is available from anywhere within a Jenkins file.
@@ -712,6 +715,8 @@ EXAMPLE:~ create a job 10 .(take the reference of job8 configuration)
  copy this code and create item in Jenkins for pipeline job replace the script with copied code and save it and run (or) build it Expected output should be   "Running 1 on http://localhost:8080/"
  
  Task - Even though we can change the default port number of Jenkins from 8080 to other port but here still showing default port number only figure it out.
+
+
  
  How to Parameterized the Jenkins Job?
  
@@ -727,6 +732,58 @@ EXAMPLE:~ create a job 10 .(take the reference of job8 configuration)
  -> Another way of Creating Jenkins user?
  
     Manage Jenkins -> security -> directon the disable "keep"
+
+
+Tools Configuration in Jenkins:
+------------------------------
+If we want to configure tools like Apache Maven, Docker, etc., we need to go to:-
+
+**Manage Jenkins** → **System Configuration** → **Tools** (Configure tools, their locations & automatic installers)
+
+### Example: To Configure Apache Maven (Specific Version 3.6.0)
+         --> To configure Apache Maven in the tools tab, we should install the **Apache Maven Plugin**. 
+         After installing the plugin, we can see Maven installations in the Tools section.
+         --> **Add Maven** → Specify requirements.
+         --> To install automatically, check the **"Install Automatically"** option.
+
+----------------------------------------------------------------------------------------------------
+
+Build Trigger Remotely:
+----------------------
+To configure this kind of requirement, we can make use of:
+
+**Triggers → Trigger Build Remotely using Authentication Token**
+
+#### Steps:
+--> Create a **Freestyle Job** with the name **"build remotely"**.
+--> Check the **"Trigger Build Remotely"** option.
+--> Configure any build step with an authentication token.
+--> Save the configuration.
+--> To check this job, use the following URL:
+
+   **JENKINS_URL/job/buildremotely/build?token=TOKEN_NAME**
+
+                 --> **JENKINS_URL** → The Jenkins instance URL.
+                 --> **buildremotely** → The job name.
+                 --> **TOKEN_NAME** → The authentication token configured.
+
+#### Example:-
+   **localhost:9090/job/buildremotely/build?token=abc-123**
+
+
+
+  Another Way of Triggering a Job Remotely:-
+
+To trigger another job in Command Prompt, use the following command:-
+
+
+curl -u Admin:1125887eebb54959f6013e50b03c4440 -X POST localhost:8999/job/job2/build
+
+                   --> **-u** → Specifies the user (**Admin**).
+                   --> **POST** → HTTP method used to trigger the job.
+
+This method allows triggering Jenkins jobs remotely using an API token for authentication.
+
 
 
 
